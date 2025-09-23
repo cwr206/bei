@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企业后台管理页面</title>
+  <style>
+    /* 全局样式 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* 顶部搜索栏样式 */
+    .top-bar {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .search-container {
+      display: flex;
+    }
+
+    .search-container input {
+      padding: 8px;
+      border: none;
+      border-radius: 4px 0 0 4px;
+    }
+
+    .search-container button {
+      padding: 8px 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+
+    /* 侧边栏样式 */
+    .sidebar {
+      width: 200px;
+      background-color: #f8f9fa;
+      padding: 20px;
+      float: left;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 10px;
+      padding: 8px;
+      background-color: #e9ecef;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* 主内容区域样式 */
+    .main-content {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    /* 统计信息区域样式 */
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+
+    .stat-item {
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 200px;
+    }
+
+    /* 图表和快捷操作区域样式 */
+    .charts-and-actions {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+
+    .chart-item,
+    .action-item {
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 200px;
+    }
+
+    /* 产品功能区域样式 */
+    .product-features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+
+    .feature-item {
+      background-color: #fff9c4; /* 黄色背景 */
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 15px;
+      width: 180px;
+      text-align: center;
+    }
+
+    /* 产品介绍区域样式 */
+    .product-intro {
+      background-color: #c8e6c9; /* 绿色背景 */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      clear: both; /* 清除浮动，确保产品介绍区域在新的一行显示 */
+    }
+
+    .product-intro h3 {
+      margin-top: 0;
+    }
+
+    .product-intro p {
+      color: #9c27b0; /* 紫罗兰色文字 */
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 顶部搜索栏 -->
+  <div class="top-bar">
+    <h2>企业名</h2>
+    <div class="search-container">
+      <input type="text" placeholder="搜索...">
+      <button>搜索</button>
+    </div>
+  </div>
+
+  <!-- 侧边栏 -->
+  <div class="sidebar">
+    <ul>
+      <li>首页</li>
+      <li>企业技能</li>
+      <li>产品管理</li>
+      <li>数据管理</li>
+      <li>资讯管理</li>
+      <li>留言板</li>
+      <li>设置</li>
+    </ul>
+  </div>
+
+  <!-- 主内容区域 -->
+  <div class="main-content">
+    <!-- 统计信息 -->
+    <div class="stats">
+      <div class="stat-item">
+        <p>今日访问</p>
+        <h3>1314</h3>
+        <p>橙色</p>
+      </div>
+      <div class="stat-item">
+        <p>本周访问</p>
+        <h3>5737</h3>
+        <p>绿色</p>
+      </div>
+      <div class="stat-item">
+        <p>本月访问</p>
+        <h3>7062</h3>
+        <p>紫色</p>
+      </div>
+      <div class="stat-item">
+        <p>本年访问</p>
+        <h3>11417</h3>
+        <p>蓝色</p>
+      </div>
+    </div>
+
+    <!-- 图表和快捷操作 -->
+    <div class="charts-and-actions">
+      <div class="chart-item">
+        <p>评论数</p>
+        <!-- 这里可以添加实际的图表，暂时用文字代替 -->
+        <p>很好 不错 一般</p>
+      </div>
+      <div class="chart-item">
+        <p>一周销量</p>
+        <!-- 这里可以添加实际的图表，暂时用柱状图示意 -->
+        <p>12h/天</p>
+        <p>销量柱状图示意</p>
+      </div>
+      <div class="action-item">
+        <p>快捷操作</p>
+        <button>添加内容</button>
+        <button>添加咨询</button>
+        <button>添加广告</button>
+        <button>添加导航</button>
+      </div>
+    </div>
+
+    <!-- 产品功能 -->
+    <div class="product-features">
+      <div class="feature-item">
+        <h3>模式</h3>
+      </div>
+      <div class="feature-item">
+        <h3>定时作业</h3>
+      </div>
+      <div class="feature-item">
+        <h3>空气检测</h3>
+      </div>
+      <div class="feature-item">
+        <h3>智能感应</h3>
+      </div>
+      <div class="feature-item">
+        <h3>智慧反馈</h3>
+      </div>
+      <div class="feature-item">
+        <h3>净网调节</h3>
+      </div>
+    </div>
+
+    <!-- 产品介绍 -->
+    <div class="product-intro">
+      <h3>产品介绍</h3>
+      <p>多层滤网强力净化，99%以上过滤PM2.5、甲醛等污染物，守护呼吸健康。支持智能感应，品质良好。</p>
+    </div>
+  </div>
+</body>
+
+</html>
