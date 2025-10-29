@@ -1,0 +1,128 @@
+{\rtf1\ansi \deff1{\fonttbl{\f1\fmodern\fprq1\fcharset0 Consolas;}}{\colortbl;\red238\green238\blue238;\red00\green00\blue00;\red166\green133\blue00;\red128\green00\blue128;\red242\green121\blue00;\red255\green128\blue00;\red255\green00\blue255;\red00\green128\blue192;\red00\green00\blue255;\red48\green48\blue48;\red255\green00\blue128;\red158\green93\blue255;\red255\green00\blue00;\red255\green00\blue00;\red187\green121\blue119;\red128\green128\blue192;\red00\green68\blue102;\red13\green195\blue117;\red13\green182\blue195;}
+\paperw11905\paperh16837\margl1134\margr1134\margt1134\margb1134\sectd\plain\f1\fs20
+\pard \cbpat1{{\cf2{}}{\cf10{{0}{1} }}{\cf2{}}{\cf8{\b #include <iostream>\b0 }}}\par\pard
+\cbpat1{{\cf10{{0}{2} }}{\cf2{}}{\cf8{\b #include <iomanip>\b0 }}}\par\pard
+\cbpat1{{\cf10{{0}{3} }}{\cf2{}}{\cf8{\b #include <string>\b0 }}}\par\pard
+\cbpat1{{\cf10{{0}{4} }}{\cf2{}}{\cf15{\b using namespace\b0 }} {\cf2{std}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{0}{5} }}{\cf2{}}}\par\pard
+\cbpat1{{\cf10{{0}{6} }}{\cf2{}}{\cf16{\b int\b0 }} {\cf2{}}{\cf17{main}}{\cf2{}}{\cf11{\b () \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{0}{7} }}{\cf2{}}    {\cf16{\b int\b0 }} {\cf2{n}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{0}{8} }}{\cf2{    cin}} {\cf11{\b >>\b0 }} {\cf2{n}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{0}{9} }}{\cf2{    cin}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{ignore}}{\cf2{}}{\cf11{\b ();\b0 }} {\cf2{}}{\cf5{// \u24573?\u30053?\u25442?\u34892?\u31526?}}}\par\pard
+\cbpat1{{\cf10{{1}{0} }}{\cf2{}}    {\cf15{\b for\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf16{\b int\b0 }} {\cf2{i}} {\cf11{\b =\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }} {\cf2{i}} {\cf11{\b <\b0 }} {\cf2{n}}{\cf11{\b ;\b0 }} {\cf2{i}}{\cf11{\b ++) \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{1} }}{\cf2{        string name}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{2} }}{\cf2{}}        {\cf16{\b double\b0 }} {\cf2{chinese}}{\cf11{\b ,\b0 }} {\cf2{math}}{\cf11{\b ,\b0 }} {\cf2{english}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{3} }}{\cf2{        cin}} {\cf11{\b >>\b0 }} {\cf2{name}} {\cf11{\b >>\b0 }} {\cf2{chinese}} {\cf11{\b >>\b0 }} {\cf2{math}} {\cf11{\b >>\b0 }} {\cf2{english}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{4} }}{\cf2{}}        {\cf16{\b double\b0 }} {\cf2{avg}} {\cf11{\b = (\b0 }}{\cf2{chinese}} {\cf11{\b +\b0 }} {\cf2{math}} {\cf11{\b +\b0 }} {\cf2{english}}{\cf11{\b ) /\b0 }} {\cf2{}}{\cf4{\b {3}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{5} }}{\cf2{        cout}} {\cf11{\b <<\b0 }} {\cf2{fixed}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf17{setprecision}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf4{\b {2}\b0 }}{\cf2{}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{6} }}{\cf2{        cout}} {\cf11{\b <<\b0 }} {\cf2{name}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{" "}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{chinese}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{" "}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{math}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{" "}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{english}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{" "}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{avg}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{7} }}{\cf2{}}        {\cf15{\b if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{avg}} {\cf11{\b >=\b0 }} {\cf2{}}{\cf4{\b {9}{0}\b0 }}{\cf2{}}{\cf11{\b ) \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{8} }}{\cf2{            cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{" Excellent"}}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{9} }}{\cf2{}}        {\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf10{{2}{0} }}{\cf2{        cout}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{2}{1} }}{\cf2{}}    {\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf10{{2}{2} }}{\cf2{}}    {\cf15{\b return\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{2}{3} }}{\cf2{}}{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf10{{2}{4} }}{\cf2{}}{\cf8{\b #include <iostream>\b0 }}}\par\pard
+\cbpat1{{\cf10{{2}{5} }}{\cf2{}}{\cf8{\b #include <cstring>\b0 }}}\par\pard
+\cbpat1{{\cf10{{2}{6} }}{\cf2{}}{\cf15{\b using namespace\b0 }} {\cf2{std}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{2}{7} }}{\cf2{}}}\par\pard
+\cbpat1{{\cf10{{2}{8} }}{\cf2{}}{\cf16{\b int\b0 }} {\cf2{}}{\cf17{countVowels}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf16{\b const char\b0 }}{\cf2{}}{\cf11{\b *\b0 }} {\cf2{p}}{\cf11{\b ) \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{2}{9} }}{\cf2{}}    {\cf16{\b int\b0 }} {\cf2{count}} {\cf11{\b =\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{3}{0} }}{\cf2{}}    {\cf15{\b while\b0 }} {\cf2{}}{\cf11{\b (*\b0 }}{\cf2{p}} {\cf11{\b !=\b0 }} {\cf2{}}{\cf3{'\\{0}'}}{\cf2{}}{\cf11{\b ) \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{3}{1} }}{\cf2{}}        {\cf16{\b char\b0 }} {\cf2{c}} {\cf11{\b =\b0 }} {\cf2{}}{\cf17{tolower}}{\cf2{}}{\cf11{\b (*\b0 }}{\cf2{p}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf10{{3}{2} }}{\cf2{}}        {\cf15{\b if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{c}} {\cf11{\b ==\b0 }} {\cf2{}}{\cf3{'a'}}{\cf2{}} {\cf11{\b ||\b0 }} {\cf2{c}} {\cf11{\b ==\b0 }} {\cf2{}}{\cf3{'e'}}{\cf2{}} {\cf11{\b ||\b0 }} {\cf2{c}} {\cf11{\b ==\b0 }} {\cf2{}}{\cf3{'i'}}{\cf2{}} {\cf11{\b ||\b0 }} {\cf2{c}} {\cf11{\b ==\b0 }} {\cf2{}}{\cf3{'o'}}{\cf2{}} {\cf11{\b ||\b0 }} {\cf2{c}} {\cf11{\b ==\b0 }} {\cf2{}}{\cf3{'u'}}{\cf2{}}{\cf11{\b ) \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{3}{3} }}{\cf2{            count}}{\cf11{\b ++;\b0 }}}\par\pard
+\cbpat1{{\cf10{{3}{4} }}{\cf2{}}        {\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf10{{3}{5} }}{\cf2{        p}}{\cf11{\b ++;\b0 }}}\par\pard
+\cbpat1{{\cf10{{3}{6} }}{\cf2{}}    {\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf10{{3}{7} }}{\cf2{}}    {\cf15{\b return\b0 }} {\cf2{count}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{3}{8} }}{\cf2{}}{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf10{{3}{9} }}{\cf2{}}}\par\pard
+\cbpat1{{\cf10{{4}{0} }}{\cf2{}}{\cf16{\b int\b0 }} {\cf2{}}{\cf17{main}}{\cf2{}}{\cf11{\b () \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{4}{1} }}{\cf2{}}    {\cf16{\b char\b0 }} {\cf2{str}}{\cf11{\b [\b0 }}{\cf2{}}{\cf4{\b {1}{0}{0}\b0 }}{\cf2{}}{\cf11{\b ];\b0 }}}\par\pard
+\cbpat1{{\cf10{{4}{2} }}{\cf2{    cin}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{getline}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{str}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf4{\b {1}{0}{0}\b0 }}{\cf2{}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf10{{4}{3} }}{\cf2{    cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"Number of vowels: "}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf17{countVowels}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{str}}{\cf11{\b ) <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{4}{4} }}{\cf2{}}    {\cf15{\b return\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{4}{5} }}{\cf2{}}{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf10{{4}{6} }}{\cf2{}}{\cf8{\b #include <iostream>\b0 }}}\par\pard
+\cbpat1{{\cf10{{4}{7} }}{\cf2{}}{\cf8{\b #include <iomanip>\b0 }}}\par\pard
+\cbpat1{{\cf10{{4}{8} }}{\cf2{}}{\cf15{\b using namespace\b0 }} {\cf2{std}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{4}{9} }}{\cf2{}}}\par\pard
+\cbpat1{{\cf10{{5}{0} }}{\cf2{}}{\cf17{inline}} {\cf2{}}{\cf16{\b double\b0 }} {\cf2{}}{\cf17{square}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf16{\b double\b0 }} {\cf2{x}}{\cf11{\b ) \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{5}{1} }}{\cf2{}}    {\cf15{\b return\b0 }} {\cf2{x}} {\cf11{\b *\b0 }} {\cf2{x}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{5}{2} }}{\cf2{}}{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf10{{5}{3} }}{\cf2{}}}\par\pard
+\cbpat1{{\cf10{{5}{4} }}{\cf2{}}{\cf16{\b double\b0 }} {\cf2{}}{\cf17{power}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf16{\b double\b0 }} {\cf2{base}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf16{\b int\b0 }} {\cf2{exponent}} {\cf11{\b =\b0 }} {\cf2{}}{\cf4{\b {2}\b0 }}{\cf2{}}{\cf11{\b ) \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{5}{5} }}{\cf2{}}    {\cf16{\b double\b0 }} {\cf2{result}} {\cf11{\b =\b0 }} {\cf2{}}{\cf4{\b {1}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{5}{6} }}{\cf2{}}    {\cf15{\b for\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf16{\b int\b0 }} {\cf2{i}} {\cf11{\b =\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }} {\cf2{i}} {\cf11{\b <\b0 }} {\cf2{exponent}}{\cf11{\b ;\b0 }} {\cf2{i}}{\cf11{\b ++) \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{5}{7} }}{\cf2{        result}} {\cf11{\b *=\b0 }} {\cf2{base}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{5}{8} }}{\cf2{}}    {\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf10{{5}{9} }}{\cf2{}}    {\cf15{\b return\b0 }} {\cf2{result}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{6}{0} }}{\cf2{}}{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf10{{6}{1} }}{\cf2{}}}\par\pard
+\cbpat1{{\cf10{{6}{2} }}{\cf2{}}{\cf16{\b double\b0 }} {\cf2{}}{\cf17{calc}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf16{\b double\b0 }} {\cf2{a}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf16{\b double\b0 }} {\cf2{b}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf16{\b char\b0 }} {\cf2{op}}{\cf11{\b ) \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{6}{3} }}{\cf2{}}    {\cf15{\b switch\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{op}}{\cf11{\b ) \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{6}{4} }}{\cf2{}}    {\cf15{\b case\b0 }} {\cf2{}}{\cf3{'+'}}{\cf2{}}{\cf11{\b :\b0 }}}\par\pard
+\cbpat1{{\cf10{{6}{5} }}{\cf2{}}        {\cf15{\b return\b0 }} {\cf2{a}} {\cf11{\b +\b0 }} {\cf2{b}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{6}{6} }}{\cf2{}}    {\cf15{\b case\b0 }} {\cf2{}}{\cf3{'-'}}{\cf2{}}{\cf11{\b :\b0 }}}\par\pard
+\cbpat1{{\cf10{{6}{7} }}{\cf2{}}        {\cf15{\b return\b0 }} {\cf2{a}} {\cf11{\b -\b0 }} {\cf2{b}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{6}{8} }}{\cf2{}}    {\cf15{\b case\b0 }} {\cf2{}}{\cf3{'*'}}{\cf2{}}{\cf11{\b :\b0 }}}\par\pard
+\cbpat1{{\cf10{{6}{9} }}{\cf2{}}        {\cf15{\b return\b0 }} {\cf2{a}} {\cf11{\b *\b0 }} {\cf2{b}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{7}{0} }}{\cf2{}}    {\cf15{\b case\b0 }} {\cf2{}}{\cf3{'/'}}{\cf2{}}{\cf11{\b :\b0 }}}\par\pard
+\cbpat1{{\cf10{{7}{1} }}{\cf2{}}        {\cf15{\b if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{b}} {\cf11{\b ==\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ) \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{7}{2} }}{\cf2{            cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"Error: divide by zero"}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{7}{3} }}{\cf2{}}            {\cf15{\b return\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{7}{4} }}{\cf2{}}        {\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf10{{7}{5} }}{\cf2{}}        {\cf15{\b return\b0 }} {\cf2{a}} {\cf11{\b /\b0 }} {\cf2{b}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{7}{6} }}{\cf2{}}    {\cf15{\b default\b0 }}{\cf2{}}{\cf11{\b :\b0 }}}\par\pard
+\cbpat1{{\cf10{{7}{7} }}{\cf2{}}        {\cf15{\b return\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{7}{8} }}{\cf2{}}    {\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf10{{7}{9} }}{\cf2{}}{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf10{{8}{0} }}{\cf2{}}}\par\pard
+\cbpat1{{\cf10{{8}{1} }}{\cf2{}}{\cf16{\b double\b0 }} {\cf2{}}{\cf17{calc}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf16{\b int\b0 }} {\cf2{a}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf16{\b int\b0 }} {\cf2{b}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf16{\b char\b0 }} {\cf2{op}}{\cf11{\b ) \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{8}{2} }}{\cf2{}}    {\cf15{\b return\b0 }} {\cf2{}}{\cf17{calc}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf15{\b static_cast\b0 }}{\cf2{}}{\cf11{\b <\b0 }}{\cf2{}}{\cf16{\b double\b0 }}{\cf2{}}{\cf11{\b >(\b0 }}{\cf2{a}}{\cf11{\b ),\b0 }} {\cf2{}}{\cf15{\b static_cast\b0 }}{\cf2{}}{\cf11{\b <\b0 }}{\cf2{}}{\cf16{\b double\b0 }}{\cf2{}}{\cf11{\b >(\b0 }}{\cf2{b}}{\cf11{\b ),\b0 }} {\cf2{op}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf10{{8}{3} }}{\cf2{}}{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf10{{8}{4} }}{\cf2{}}}\par\pard
+\cbpat1{{\cf10{{8}{5} }}{\cf2{}}{\cf16{\b int\b0 }} {\cf2{}}{\cf17{main}}{\cf2{}}{\cf11{\b () \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{8}{6} }}{\cf2{}}    {\cf16{\b double\b0 }} {\cf2{a}}{\cf11{\b ,\b0 }} {\cf2{b}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{8}{7} }}{\cf2{}}    {\cf16{\b char\b0 }} {\cf2{op}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{8}{8} }}{\cf2{    cin}} {\cf11{\b >>\b0 }} {\cf2{a}} {\cf11{\b >>\b0 }} {\cf2{b}} {\cf11{\b >>\b0 }} {\cf2{op}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{8}{9} }}{\cf2{    cout}} {\cf11{\b <<\b0 }} {\cf2{fixed}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf17{setprecision}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf4{\b {2}\b0 }}{\cf2{}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf10{{9}{0} }}{\cf2{    cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"square("}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{a}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{") = "}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf17{square}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{a}}{\cf11{\b ) <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{9}{1} }}{\cf2{    cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"power("}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{a}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{","}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{b}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{") = "}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf17{power}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{a}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf15{\b static_cast\b0 }}{\cf2{}}{\cf11{\b <\b0 }}{\cf2{}}{\cf16{\b int\b0 }}{\cf2{}}{\cf11{\b >(\b0 }}{\cf2{b}}{\cf11{\b )) <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{9}{2} }}{\cf2{}}    {\cf15{\b if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{op}} {\cf11{\b ==\b0 }} {\cf2{}}{\cf3{'/'}}{\cf2{}}{\cf11{\b ) \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{9}{3} }}{\cf2{}}        {\cf15{\b if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{b}} {\cf11{\b ==\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ) \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{9}{4} }}{\cf2{            cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"Error: divide by zero"}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{9}{5} }}{\cf2{}}        {\cf11{\b \}\b0 }} {\cf2{}}{\cf15{\b else\b0 }} {\cf2{}}{\cf11{\b \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{9}{6} }}{\cf2{            cout}} {\cf11{\b <<\b0 }} {\cf2{a}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{" "}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{op}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{" "}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{b}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{" = "}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf17{calc}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{a}}{\cf11{\b ,\b0 }} {\cf2{b}}{\cf11{\b ,\b0 }} {\cf2{op}}{\cf11{\b ) <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{9}{7} }}{\cf2{}}        {\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf10{{9}{8} }}{\cf2{}}    {\cf11{\b \}\b0 }} {\cf2{}}{\cf15{\b else\b0 }} {\cf2{}}{\cf11{\b \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{9}{9} }}{\cf2{        cout}} {\cf11{\b <<\b0 }} {\cf2{a}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{" "}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{op}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{" "}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{b}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{" = "}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf17{calc}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{a}}{\cf11{\b ,\b0 }} {\cf2{b}}{\cf11{\b ,\b0 }} {\cf2{op}}{\cf11{\b ) <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{0}{0} }}{\cf2{}}    {\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{0}{1} }}{\cf2{}}    {\cf15{\b return\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{0}{2} }}{\cf2{}}{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{0}{3} }}{\cf2{}}{\cf8{\b #include <iostream>\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{0}{4} }}{\cf2{}}{\cf15{\b using namespace\b0 }} {\cf2{std}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{0}{5} }}{\cf2{}}}\par\pard
+\cbpat1{{\cf10{{1}{0}{6} }}{\cf2{}}{\cf16{\b void\b0 }} {\cf2{}}{\cf17{swap}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf16{\b int\b0 }}{\cf2{}}{\cf11{\b &\b0 }} {\cf2{x}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf16{\b int\b0 }}{\cf2{}}{\cf11{\b &\b0 }} {\cf2{y}}{\cf11{\b ) \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{0}{7} }}{\cf2{}}    {\cf16{\b int\b0 }} {\cf2{temp}} {\cf11{\b =\b0 }} {\cf2{x}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{0}{8} }}{\cf2{    x}} {\cf11{\b =\b0 }} {\cf2{y}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{0}{9} }}{\cf2{    y}} {\cf11{\b =\b0 }} {\cf2{temp}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{1}{0} }}{\cf2{}}{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{1}{1} }}{\cf2{}}}\par\pard
+\cbpat1{{\cf10{{1}{1}{2} }}{\cf2{}}{\cf16{\b void\b0 }} {\cf2{}}{\cf17{swap}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf16{\b int\b0 }}{\cf2{}}{\cf11{\b *\b0 }} {\cf2{x}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf16{\b int\b0 }}{\cf2{}}{\cf11{\b *\b0 }} {\cf2{y}}{\cf11{\b ) \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{1}{3} }}{\cf2{}}    {\cf16{\b int\b0 }} {\cf2{temp}} {\cf11{\b = *\b0 }}{\cf2{x}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{1}{4} }}{\cf2{}}    {\cf11{\b *\b0 }}{\cf2{x}} {\cf11{\b = *\b0 }}{\cf2{y}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{1}{5} }}{\cf2{}}    {\cf11{\b *\b0 }}{\cf2{y}} {\cf11{\b =\b0 }} {\cf2{temp}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{1}{6} }}{\cf2{}}{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{1}{7} }}{\cf2{}}}\par\pard
+\cbpat1{{\cf10{{1}{1}{8} }}{\cf2{}}{\cf16{\b int\b0 }} {\cf2{}}{\cf17{main}}{\cf2{}}{\cf11{\b () \{\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{1}{9} }}{\cf2{}}    {\cf16{\b int\b0 }} {\cf2{x}}{\cf11{\b ,\b0 }} {\cf2{y}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{2}{0} }}{\cf2{    cin}} {\cf11{\b >>\b0 }} {\cf2{x}} {\cf11{\b >>\b0 }} {\cf2{y}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{2}{1} }}{\cf2{    cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"Before swap: x="}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{x}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{", y="}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{y}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{2}{2} }}{\cf2{}}    {\cf17{swap}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{x}}{\cf11{\b ,\b0 }} {\cf2{y}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{2}{3} }}{\cf2{    cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"After  swap: x="}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{x}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{", y="}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{y}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{2}{4} }}{\cf2{}}    {\cf15{\b return\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf10{{1}{2}{5} }}{\cf2{}}{\cf11{\b \}\b0 }}{\cf2{}}}\par\pard
+\cbpat1{}}
