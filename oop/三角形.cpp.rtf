@@ -1,0 +1,80 @@
+{\rtf1\ansi \deff1{\fonttbl{\f1\fmodern\fprq1\fcharset0 Consolas;}}{\colortbl;\red238\green238\blue238;\red00\green00\blue00;\red166\green133\blue00;\red128\green00\blue128;\red242\green121\blue00;\red255\green128\blue00;\red255\green00\blue255;\red00\green128\blue192;\red00\green00\blue255;\red48\green48\blue48;\red255\green00\blue128;\red158\green93\blue255;\red255\green00\blue00;\red255\green00\blue00;\red187\green121\blue119;\red128\green128\blue192;\red00\green68\blue102;\red13\green195\blue117;\red13\green182\blue195;}
+\paperw11905\paperh16837\margl1134\margr1134\margt1134\margb1134\sectd\plain\f1\fs20
+\pard \cbpat1{{\cf2{}}{\cf8{\b #include<iostream>\b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf8{\b #include<cmath>\b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf15{\b using namespace\b0 }} {\cf2{std}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf17{class}} {\cf2{Triangle}} {\cf11{\b \{\b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf17{private}}{\cf2{}}{\cf11{\b :\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf16{\b int\b0 }} {\cf2{a}}{\cf11{\b ,\b0 }} {\cf2{b}}{\cf11{\b ,\b0 }} {\cf2{c}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf17{public}}{\cf2{}}{\cf11{\b :\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf17{Triangle}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf16{\b int\b0 }} {\cf2{a{1}}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf16{\b int\b0 }} {\cf2{b{1}}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf16{\b int\b0 }} {\cf2{c{1}}}{\cf11{\b ) \{\b0 }}}\par\pard
+\cbpat1{{\cf2{		a}} {\cf11{\b =\b0 }} {\cf2{a{1}}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{		b}} {\cf11{\b =\b0 }} {\cf2{b{1}}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{		c}} {\cf11{\b =\b0 }} {\cf2{c{1}}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf16{\b bool\b0 }} {\cf2{}}{\cf17{isTriangle}}{\cf2{}}{\cf11{\b ()\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \{\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf15{\b if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{a}} {\cf11{\b +\b0 }} {\cf2{b}} {\cf11{\b >\b0 }} {\cf2{c}} {\cf11{\b &&\b0 }} {\cf2{a}} {\cf11{\b +\b0 }} {\cf2{c}} {\cf11{\b >\b0 }} {\cf2{b}} {\cf11{\b &&\b0 }} {\cf2{c}} {\cf11{\b +\b0 }} {\cf2{b}} {\cf11{\b >\b0 }} {\cf2{a}}{\cf11{\b )\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf11{\b \{\b0 }}}\par\pard
+\cbpat1{{\cf2{}}			{\cf15{\b return\b0 }} {\cf2{}}{\cf4{\b {1}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf15{\b else return\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf16{\b double\b0 }} {\cf2{}}{\cf17{cos}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf16{\b int\b0 }} {\cf2{a}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf16{\b int\b0 }} {\cf2{b}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf16{\b int\b0 }} {\cf2{c}}{\cf11{\b )\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \{\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf16{\b int\b0 }} {\cf2{t}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf15{\b if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{b}} {\cf11{\b >\b0 }} {\cf2{c}}{\cf11{\b )\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf11{\b \{\b0 }}}\par\pard
+\cbpat1{{\cf2{			t}} {\cf11{\b =\b0 }} {\cf2{b}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{			b}} {\cf11{\b =\b0 }} {\cf2{c}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{			c}} {\cf11{\b =\b0 }} {\cf2{t}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf15{\b if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{a}} {\cf11{\b >\b0 }} {\cf2{c}}{\cf11{\b )\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf11{\b \{\b0 }}}\par\pard
+\cbpat1{{\cf2{			t}} {\cf11{\b =\b0 }} {\cf2{a}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{			a}} {\cf11{\b =\b0 }} {\cf2{c}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{			c}} {\cf11{\b =\b0 }} {\cf2{t}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}		{\cf16{\b double\b0 }} {\cf2{cos}} {\cf11{\b = (\b0 }}{\cf2{a}} {\cf11{\b *\b0 }} {\cf2{a}} {\cf11{\b +\b0 }} {\cf2{b}} {\cf11{\b *\b0 }} {\cf2{b}} {\cf11{\b -\b0 }} {\cf2{c}} {\cf11{\b *\b0 }} {\cf2{c}}{\cf11{\b ) / (\b0 }}{\cf2{}}{\cf4{\b {2}.{0}\b0 }} {\cf2{}}{\cf11{\b *\b0 }} {\cf2{a}} {\cf11{\b *\b0 }} {\cf2{b}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}		{\cf15{\b return\b0 }} {\cf2{cos}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf16{\b int\b0 }} {\cf2{}}{\cf17{perimeter}}{\cf2{}}{\cf11{\b () \{\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf15{\b return\b0 }} {\cf2{a}} {\cf11{\b +\b0 }} {\cf2{b}} {\cf11{\b +\b0 }} {\cf2{c}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf16{\b double\b0 }} {\cf2{}}{\cf17{area}}{\cf2{}}{\cf11{\b () \{\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf16{\b double\b0 }} {\cf2{p}} {\cf11{\b = (\b0 }}{\cf2{a}} {\cf11{\b +\b0 }} {\cf2{b}} {\cf11{\b +\b0 }} {\cf2{c}}{\cf11{\b ) *\b0 }} {\cf2{}}{\cf4{\b {0}.{5}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf15{\b return\b0 }} {\cf2{}}{\cf17{sqrt}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{p}} {\cf11{\b * (\b0 }}{\cf2{p}} {\cf11{\b -\b0 }} {\cf2{a}}{\cf11{\b ) * (\b0 }}{\cf2{p}} {\cf11{\b -\b0 }} {\cf2{b}}{\cf11{\b ) * (\b0 }}{\cf2{p}} {\cf11{\b -\b0 }} {\cf2{c}}{\cf11{\b ));\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf16{\b void\b0 }} {\cf2{}}{\cf17{typeTriangle}}{\cf2{}}{\cf11{\b ()\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \{\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	}\par\pard
+\cbpat1{{\cf2{}}			{\cf15{\b if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf17{cos}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{a}}{\cf11{\b ,\b0 }} {\cf2{b}}{\cf11{\b ,\b0 }} {\cf2{c}}{\cf11{\b ) ==\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b )\b0 }}}\par\pard
+\cbpat1{{\cf2{}}			{\cf11{\b \{\b0 }}}\par\pard
+\cbpat1{{\cf2{				cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"Right triangle"}}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}			{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}			{\cf15{\b if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf17{cos}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{a}}{\cf11{\b ,\b0 }} {\cf2{b}}{\cf11{\b ,\b0 }} {\cf2{c}}{\cf11{\b ) >\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b )\b0 }}}\par\pard
+\cbpat1{{\cf2{}}			{\cf11{\b \{\b0 }}}\par\pard
+\cbpat1{{\cf2{				cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"Acute triangle"}}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}			{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}			{\cf15{\b if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf17{cos}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{a}}{\cf11{\b ,\b0 }} {\cf2{b}}{\cf11{\b ,\b0 }} {\cf2{c}}{\cf11{\b ) <\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b )\b0 }}}\par\pard
+\cbpat1{{\cf2{}}			{\cf11{\b \{\b0 }}}\par\pard
+\cbpat1{{\cf2{				cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"Obtuse triangle}}{\cf7{\b \\n\b0 }}{\cf3{"}}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}			{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		}\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf11{\b \};\b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf16{\b int\b0 }} {\cf2{}}{\cf17{main}}{\cf2{}}{\cf11{\b ()\b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf11{\b \{\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf16{\b int\b0 }} {\cf2{a}}{\cf11{\b ,\b0 }} {\cf2{b}}{\cf11{\b ,\b0 }} {\cf2{c}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{	cin}} {\cf11{\b >>\b0 }} {\cf2{a}} {\cf11{\b >>\b0 }} {\cf2{b}} {\cf11{\b >>\b0 }} {\cf2{c}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{	Triangle}} {\cf17{t{1}}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{a}}{\cf11{\b ,\b0 }}{\cf2{b}}{\cf11{\b ,\b0 }}{\cf2{c}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf2{	cout}} {\cf11{\b <<\b0 }}{\cf2{}}{\cf3{"å‘¨\'e9•¿ï¼š"}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{t{1}}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{perimeter}}{\cf2{}}{\cf11{\b ()<<\b0 }}{\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{	cout}}{\cf11{\b <<\b0 }}{\cf2{}}{\cf3{"\'e9¢ç§¯ï¼š"}}{\cf2{}}{\cf11{\b <<\b0 }}{\cf2{t{1}}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{area}}{\cf2{}}{\cf11{\b ()<<\b0 }}{\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{	t{1}}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{typeTriangle}}{\cf2{}}{\cf11{\b ();\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}	}\par\pard
+\cbpat1{{\cf2{}}	{\cf15{\b return\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf11{\b \}\b0 }}{\cf2{}}}\par\pard
+\cbpat1{}}

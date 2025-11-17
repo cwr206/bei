@@ -1,0 +1,73 @@
+{\rtf1\ansi \deff1{\fonttbl{\f1\fmodern\fprq1\fcharset0 Consolas;}}{\colortbl;\red238\green238\blue238;\red00\green00\blue00;\red166\green133\blue00;\red128\green00\blue128;\red242\green121\blue00;\red255\green128\blue00;\red255\green00\blue255;\red00\green128\blue192;\red00\green00\blue255;\red48\green48\blue48;\red255\green00\blue128;\red158\green93\blue255;\red255\green00\blue00;\red255\green00\blue00;\red187\green121\blue119;\red128\green128\blue192;\red00\green68\blue102;\red13\green195\blue117;\red13\green182\blue195;}
+\paperw11905\paperh16837\margl1134\margr1134\margt1134\margb1134\sectd\plain\f1\fs20
+\pard \cbpat1{{\cf2{}}{\cf8{\b #include <iostream>\b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf15{\b using namespace\b0 }} {\cf2{std}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}{\cf17{class}} {\cf2{Date}} {\cf11{\b \{\b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf17{private}}{\cf2{}}{\cf11{\b :\b0 }}}\par\pard
+\cbpat1{{\cf2{}}    {\cf16{\b int\b0 }} {\cf2{year}}{\cf11{\b ;\b0 }}   {\cf2{}}{\cf5{// å¹´\'e4»½}}}\par\pard
+\cbpat1{{\cf2{}}    {\cf16{\b int\b0 }} {\cf2{month}}{\cf11{\b ;\b0 }}  {\cf2{}}{\cf5{// æœˆ\'e4»½}}}\par\pard
+\cbpat1{{\cf2{}}    {\cf16{\b int\b0 }} {\cf2{day}}{\cf11{\b ;\b0 }}    {\cf2{}}{\cf5{// æ—¥æœŸ}}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}{\cf17{public}}{\cf2{}}{\cf11{\b :\b0 }}}\par\pard
+\cbpat1{{\cf2{}}    {\cf5{// {1}. æ„\'e9€ å‡½æ•°ï¼š\'e9»˜\'e8®¤åˆå§‹åŒ–ï¼ˆ{2}{0}{2}{5}-{0}{1}-{0}{1}ï¼‰ï¼Œæ”¯æŒç®€å•\'e8µ‹å€¼}}}\par\pard
+\cbpat1{{\cf2{}}    {\cf17{Date}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf16{\b int\b0 }} {\cf2{y}} {\cf11{\b =\b0 }} {\cf2{}}{\cf4{\b {2}{0}{2}{5}\b0 }}{\cf2{}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf16{\b int\b0 }} {\cf2{m}} {\cf11{\b =\b0 }} {\cf2{}}{\cf4{\b {1}\b0 }}{\cf2{}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf16{\b int\b0 }} {\cf2{d}} {\cf11{\b =\b0 }} {\cf2{}}{\cf4{\b {1}\b0 }}{\cf2{}}{\cf11{\b ) \{\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf5{// åŸºç¡€æ ¡\'e9ªŒï¼š\'e9¿å…æ˜æ˜¾æ— æ•ˆå€¼ï¼ˆ\'e4¸ç”¨å¤æ‚\'e9€»\'e8¾‘ï¼‰}}}\par\pard
+\cbpat1{{\cf2{        year}} {\cf11{\b = (\b0 }}{\cf2{y}} {\cf11{\b >\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ) ?\b0 }} {\cf2{y}} {\cf11{\b :\b0 }} {\cf2{}}{\cf4{\b {2}{0}{2}{5}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{        month}} {\cf11{\b = (\b0 }}{\cf2{m}} {\cf11{\b >=\b0 }} {\cf2{}}{\cf4{\b {1}\b0 }} {\cf2{}}{\cf11{\b &&\b0 }} {\cf2{m}} {\cf11{\b <=\b0 }} {\cf2{}}{\cf4{\b {1}{2}\b0 }}{\cf2{}}{\cf11{\b ) ?\b0 }} {\cf2{m}} {\cf11{\b :\b0 }} {\cf2{}}{\cf4{\b {1}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{        day}} {\cf11{\b = (\b0 }}{\cf2{d}} {\cf11{\b >=\b0 }} {\cf2{}}{\cf4{\b {1}\b0 }} {\cf2{}}{\cf11{\b &&\b0 }} {\cf2{d}} {\cf11{\b <=\b0 }} {\cf2{}}{\cf4{\b {3}{1}\b0 }}{\cf2{}}{\cf11{\b ) ?\b0 }} {\cf2{d}} {\cf11{\b :\b0 }} {\cf2{}}{\cf4{\b {1}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}    {\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}  }\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}    {\cf5{// {2}. ç®€å•\'e8¾“å…¥æ—¥æœŸï¼šç›´æ¥\'e8¾“å…¥å¹´ã€æœˆã€æ—¥\'e4¸‰\'e4¸ªæ•´æ•°}}}\par\pard
+\cbpat1{{\cf2{}}    {\cf16{\b void\b0 }} {\cf2{}}{\cf17{inputDate}}{\cf2{}}{\cf11{\b () \{\b0 }}}\par\pard
+\cbpat1{{\cf2{        cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"\'e8¯·\'e8¾“å…¥å¹´\'e4»½ï¼š"}}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{        cin}} {\cf11{\b >>\b0 }} {\cf2{year}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{        cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"\'e8¯·\'e8¾“å…¥æœˆ\'e4»½ï¼š"}}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{        cin}} {\cf11{\b >>\b0 }} {\cf2{month}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{        cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"\'e8¯·\'e8¾“å…¥æ—¥æœŸï¼š"}}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{        cin}} {\cf11{\b >>\b0 }} {\cf2{day}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}      }\par\pard
+\cbpat1{{\cf2{}}    {\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}    {\cf5{// {3}. ç®€å•\'e8¾“å‡ºæ—¥æœŸï¼šæ ¼å¼ç®€æ´ï¼Œæ— \'e8¡¥\'e9›¶ï¼ˆå¦‚ {2}{0}{2}{5}-{3}-{5}ï¼‰}}}\par\pard
+\cbpat1{{\cf2{}}    {\cf16{\b void\b0 }} {\cf2{}}{\cf17{showDate}}{\cf2{}}{\cf11{\b () \{\b0 }}}\par\pard
+\cbpat1{{\cf2{        cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"å½“å‰æ—¥æœŸï¼š"}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{year}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"å¹´"}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{month}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"æœˆ"}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{day}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"æ—¥"}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}    {\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}    {\cf5{// {4}. \'e8®¡ç®—å¹¶\'e8¾“å‡ºæ˜ŸæœŸå‡ ï¼ˆ\'e4¸­æ–‡æ˜¾ç¤ºï¼Œæ— å¤æ‚\'e8¿”å›å€¼ï¼‰}}}\par\pard
+\cbpat1{{\cf2{}}    {\cf16{\b void\b0 }} {\cf2{}}{\cf17{showWeekday}}{\cf2{}}{\cf11{\b () \{\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf16{\b int\b0 }} {\cf2{y}} {\cf11{\b =\b0 }} {\cf2{year}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf16{\b int\b0 }} {\cf2{m}} {\cf11{\b =\b0 }} {\cf2{month}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf16{\b int\b0 }} {\cf2{d}} {\cf11{\b =\b0 }} {\cf2{day}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}        {\cf5{// \'e8”¡å‹’å…¬å¼\'e9¢„å¤„ç†ï¼ˆå†…\'e9ƒ¨\'e9€»\'e8¾‘ï¼Œç”¨æˆ·æ— \'e9œ€å…³å¿ƒï¼‰}}}\par\pard
+\cbpat1{{\cf2{}}        {\cf15{\b if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{m}} {\cf11{\b ==\b0 }} {\cf2{}}{\cf4{\b {1}\b0 }} {\cf2{}}{\cf11{\b ||\b0 }} {\cf2{m}} {\cf11{\b ==\b0 }} {\cf2{}}{\cf4{\b {2}\b0 }}{\cf2{}}{\cf11{\b ) \{\b0 }}}\par\pard
+\cbpat1{{\cf2{            y}}{\cf11{\b --;\b0 }}}\par\pard
+\cbpat1{{\cf2{            m}} {\cf11{\b +=\b0 }} {\cf2{}}{\cf4{\b {1}{2}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}        {\cf5{// \'e8”¡å‹’å…¬å¼\'e8®¡ç®—ï¼ˆç›´æ¥å¾—å‡ºç»“æœï¼Œæ— \'e9œ€ç”¨æˆ·\'e9¢å¤–æ“\'e4½œï¼‰}}}\par\pard
+\cbpat1{{\cf2{}}        {\cf16{\b int\b0 }} {\cf2{weekday}} {\cf11{\b = (\b0 }}{\cf2{d}} {\cf11{\b +\b0 }} {\cf2{}}{\cf4{\b {2}\b0 }} {\cf2{}}{\cf11{\b *\b0 }} {\cf2{m}} {\cf11{\b +\b0 }} {\cf2{}}{\cf4{\b {3}\b0 }} {\cf2{}}{\cf11{\b * (\b0 }}{\cf2{m}} {\cf11{\b +\b0 }} {\cf2{}}{\cf4{\b {1}\b0 }}{\cf2{}}{\cf11{\b ) /\b0 }} {\cf2{}}{\cf4{\b {5}\b0 }} {\cf2{}}{\cf11{\b +\b0 }} {\cf2{y}} {\cf11{\b +\b0 }} {\cf2{y}} {\cf11{\b /\b0 }} {\cf2{}}{\cf4{\b {4}\b0 }} {\cf2{}}{\cf11{\b -\b0 }} {\cf2{y}} {\cf11{\b /\b0 }} {\cf2{}}{\cf4{\b {1}{0}{0}\b0 }} {\cf2{}}{\cf11{\b +\b0 }} {\cf2{y}} {\cf11{\b /\b0 }} {\cf2{}}{\cf4{\b {4}{0}{0}\b0 }} {\cf2{}}{\cf11{\b +\b0 }} {\cf2{}}{\cf4{\b {1}\b0 }}{\cf2{}}{\cf11{\b ) %\b0 }} {\cf2{}}{\cf4{\b {7}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{        string weekdayStr}}{\cf11{\b [] = \{\b0 }} {\cf2{}}{\cf3{"æ˜ŸæœŸæ—¥"}}{\cf2{}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf3{"æ˜ŸæœŸ\'e4¸€"}}{\cf2{}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf3{"æ˜ŸæœŸ\'e4ºŒ"}}{\cf2{}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf3{"æ˜ŸæœŸ\'e4¸‰"}}{\cf2{}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf3{"æ˜ŸæœŸå››"}}{\cf2{}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf3{"æ˜ŸæœŸ\'e4º”"}}{\cf2{}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf3{"æ˜ŸæœŸå…­"}}{\cf2{}} {\cf11{\b \};\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{        cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"\'e8¯¥æ—¥æœŸæ˜¯ï¼š"}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{weekdayStr}}{\cf11{\b [\b0 }}{\cf2{weekday}}{\cf11{\b ] <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}    {\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf11{\b \};\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}{\cf5{// \'e4¸»å‡½æ•°ï¼š\'e4»…ç”¨åŸºç¡€\'e8¾“å…¥\'e8¾“å‡ºï¼Œæ— ç‰¹æ®Šæ“\'e4½œ}}}\par\pard
+\cbpat1{{\cf2{}}{\cf16{\b int\b0 }} {\cf2{}}{\cf17{main}}{\cf2{}}{\cf11{\b () \{\b0 }}}\par\pard
+\cbpat1{{\cf2{    Date myDate}}{\cf11{\b ;\b0 }}  {\cf2{}}{\cf5{// åˆ›å»ºæ—¥æœŸå¯¹\'e8±¡ï¼ˆ\'e9»˜\'e8®¤{2}{0}{2}{5}-{0}{1}-{0}{1}ï¼‰}}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}    {\cf5{// \'e8¾“å…¥æ—¥æœŸï¼ˆ\'e4»…\'e9œ€\'e8¾“å…¥\'e4¸‰\'e4¸ªæ•´æ•°ï¼Œæ— æ ¼å¼\'e8¦æ±‚ï¼‰}}}\par\pard
+\cbpat1{{\cf2{    cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"==== æ—¥æœŸ\'e8¾“å…¥ ===="}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{    myDate}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{inputDate}}{\cf2{}}{\cf11{\b ();\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}    {\cf5{// \'e8¾“å‡ºç»“æœï¼ˆç›´æ¥æ˜¾ç¤ºï¼Œæ— \'e9œ€å¤æ‚æ ¼å¼ï¼‰}}}\par\pard
+\cbpat1{{\cf2{    cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"}}{\cf7{\b \\n\b0 }}{\cf3{==== æ—¥æœŸ\'e4¿¡æ¯ ===="}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{    myDate}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{showDate}}{\cf2{}}{\cf11{\b ();\b0 }}}\par\pard
+\cbpat1{{\cf2{    myDate}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{showWeekday}}{\cf2{}}{\cf11{\b ();\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}    {\cf15{\b return\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf11{\b \}\b0 }}{\cf2{}}}\par\pard
+\cbpat1{}}
