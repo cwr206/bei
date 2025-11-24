@@ -1,0 +1,75 @@
+{\rtf1\ansi \deff1{\fonttbl{\f1\fmodern\fprq1\fcharset0 Consolas;}}{\colortbl;\red238\green238\blue238;\red00\green00\blue00;\red166\green133\blue00;\red128\green00\blue128;\red242\green121\blue00;\red255\green128\blue00;\red255\green00\blue255;\red00\green128\blue192;\red00\green00\blue255;\red48\green48\blue48;\red255\green00\blue128;\red158\green93\blue255;\red255\green00\blue00;\red255\green00\blue00;\red187\green121\blue119;\red128\green128\blue192;\red00\green68\blue102;\red13\green195\blue117;\red13\green182\blue195;}
+\paperw11905\paperh16837\margl1134\margr1134\margt1134\margb1134\sectd\plain\f1\fs20
+\pard \cbpat1{{\cf2{}}{\cf8{\b #include\b0 }} {\cf9{"MyArray.h"}}{\cf8{\b \b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf8{\b #include <iostream>\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}{\cf16{\b int\b0 }} {\cf2{}}{\cf17{main}}{\cf2{}}{\cf11{\b () \{\b0 }}}\par\pard
+\cbpat1{{\cf2{}}    {\cf15{\b try\b0 }} {\cf2{}}{\cf11{\b \{\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf5{// æµ‹\'e8¯•\'e9»˜\'e8®¤æž„\'e9€ å‡½æ•°}}}\par\pard
+\cbpat1{{\cf2{        MyArray arr{1}}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf18{std}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"arr{1}çš„å¤§å°: "}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{arr{1}}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{getSize}}{\cf2{}}{\cf11{\b () <<\b0 }} {\cf2{}}{\cf18{std}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}        {\cf5{// æµ‹\'e8¯•å¸¦å‚æ•°çš„æž„\'e9€ å‡½æ•°}}}\par\pard
+\cbpat1{{\cf2{        MyArray}} {\cf17{arr{2}}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf4{\b {3}\b0 }}{\cf2{}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf18{std}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"arr{2}çš„å¤§å°: "}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{arr{2}}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{getSize}}{\cf2{}}{\cf11{\b () <<\b0 }} {\cf2{}}{\cf18{std}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}        {\cf5{// \'e8®¾ç½®arr{2}çš„å€¼}}}\par\pard
+\cbpat1{{\cf2{        arr{2}}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{setElement}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf4{\b {1}{0}\b0 }}{\cf2{}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf2{        arr{2}}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{setElement}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf4{\b {1}\b0 }}{\cf2{}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf4{\b {2}{0}\b0 }}{\cf2{}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf2{        arr{2}}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{setElement}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf4{\b {2}\b0 }}{\cf2{}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf4{\b {3}{0}\b0 }}{\cf2{}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf18{std}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"arr{2}çš„å†…å®¹: "}}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{        arr{2}}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{print}}{\cf2{}}{\cf11{\b ();\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}        {\cf5{// æµ‹\'e8¯•æ‹·\'e8´æž„\'e9€ å‡½æ•°}}}\par\pard
+\cbpat1{{\cf2{        MyArray}} {\cf17{arr{3}}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{arr{2}}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf18{std}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"arr{3}çš„å†…å®¹(æ‹·\'e8´\'e8‡ªarr{2}): "}}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{        arr{3}}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{print}}{\cf2{}}{\cf11{\b ();\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}        {\cf5{// \'e4¿®æ”¹arr{3}çš„å€¼ï¼Œ\'e9ªŒ\'e8¯æ·±æ‹·\'e8´}}}\par\pard
+\cbpat1{{\cf2{        arr{3}}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{setElement}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf4{\b {1}{0}{0}\b0 }}{\cf2{}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf18{std}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"\'e4¿®æ”¹åŽçš„arr{3}: "}}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{        arr{3}}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{print}}{\cf2{}}{\cf11{\b ();\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf18{std}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"æ­¤æ—¶çš„arr{2}: "}}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{        arr{2}}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{print}}{\cf2{}}{\cf11{\b ();\b0 }}  {\cf2{}}{\cf5{// arr{2}åº”\'e4¿æŒ\'e4¸å˜}}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}        {\cf5{// åˆ›å»ºå¦\'e4¸€\'e4¸ªæ•°ç»„ç”¨\'e4ºŽæµ‹\'e8¯•}}}\par\pard
+\cbpat1{{\cf2{        MyArray}} {\cf17{arr{4}}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf4{\b {2}\b0 }}{\cf2{}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf2{        arr{4}}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{setElement}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf4{\b {5}\b0 }}{\cf2{}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf2{        arr{4}}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{setElement}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf4{\b {1}\b0 }}{\cf2{}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf4{\b {6}\b0 }}{\cf2{}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf18{std}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"arr{4}çš„å†…å®¹: "}}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{        arr{4}}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{print}}{\cf2{}}{\cf11{\b ();\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}        {\cf5{// æµ‹\'e8¯•æ•°ç»„åˆå¹¶}}}\par\pard
+\cbpat1{{\cf2{        MyArray merged}} {\cf11{\b =\b0 }} {\cf2{arr{2}}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{merge}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{arr{4}}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf18{std}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"arr{2}å’Œarr{4}åˆå¹¶åŽçš„æ•°ç»„: "}}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{        merged}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{print}}{\cf2{}}{\cf11{\b ();\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}        {\cf5{// æµ‹\'e8¯•åŠ æ³•}}}\par\pard
+\cbpat1{{\cf2{        MyArray sum}} {\cf11{\b =\b0 }} {\cf2{arr{2}}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{add}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{arr{4}}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf18{std}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"arr{2} + arr{4} = "}}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{        sum}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{print}}{\cf2{}}{\cf11{\b ();\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}        {\cf5{// æµ‹\'e8¯•å‡æ³•}}}\par\pard
+\cbpat1{{\cf2{        MyArray diff}} {\cf11{\b =\b0 }} {\cf2{arr{2}}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{subtract}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{arr{4}}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf18{std}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"arr{2} - arr{4} = "}}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{        diff}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{print}}{\cf2{}}{\cf11{\b ();\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}        {\cf5{// æµ‹\'e8¯•\'e4¹˜æ³•}}}\par\pard
+\cbpat1{{\cf2{        MyArray product}} {\cf11{\b =\b0 }} {\cf2{arr{2}}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{multiply}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{arr{4}}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf18{std}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"arr{2} * arr{4} = "}}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{        product}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{print}}{\cf2{}}{\cf11{\b ();\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}        {\cf5{// æµ‹\'e8¯•\'e9™¤æ³•}}}\par\pard
+\cbpat1{{\cf2{        MyArray quotient}} {\cf11{\b =\b0 }} {\cf2{arr{2}}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{divide}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{arr{4}}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf18{std}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"arr{2} / arr{4} = "}}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{        quotient}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{print}}{\cf2{}}{\cf11{\b ();\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}    {\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}    {\cf15{\b catch\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf16{\b const\b0 }} {\cf2{}}{\cf18{std}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{exception}}{\cf11{\b &\b0 }} {\cf2{e}}{\cf11{\b ) \{\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf18{std}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{cerr}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"å‘ç”Ÿ\'e9”™\'e8¯¯: "}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{e}}{\cf11{\b .\b0 }}{\cf2{}}{\cf17{what}}{\cf2{}}{\cf11{\b () <<\b0 }} {\cf2{}}{\cf18{std}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}        {\cf15{\b return\b0 }} {\cf2{}}{\cf4{\b {1}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}    {\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}    {\cf15{\b return\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf11{\b \}\b0 }}{\cf2{}}}\par\pard
+\cbpat1{}}
