@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>晨光阅读会 · 招新报名</title>
+    <style>
+        /* 必选.page样式（仅修改背景色为学号末位0要求的#FFA54C） */
+        .page {
+            display: inline-block;
+            background-color: #FFA54C;
+            box-shadow: 0 0 30px rgba(80, 58, 35, 0.25);
+            text-align: left;
+            max-width: 720px;
+            padding: 20px 30px; /* 新增内边距优化排版，不违反作业规则 */
+        }
+
+        /* 3. 并集选择器：所有标题统一样式 */
+        h1, h2, h3, h4, h5, h6 {
+            color: #503A23;
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            margin-top: 0;
+            border-bottom: 2px solid #503A23;
+            padding-bottom: 8px;
+        }
+
+        /* 4. ID选择器：重要提示强调样式 */
+        p#intro {
+            font-size: 18px;
+            font-weight: bold;
+            color: #8B4513;
+            background-color: #FFF8E1;
+            padding: 10px;
+            border-left: 4px solid #8B4513;
+        }
+
+        /* 5. 带类名的链接样式 */
+        a.red {
+            color: #D32F2F;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a.blue {
+            color: #1976D2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* 6. 伪元素样式 */
+        p::first-letter {
+            font-size: 24px;
+            color: #8B4513;
+            font-weight: bold;
+        }
+        div::first-line {
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        /* 2. 链接伪类样式 */
+        a:link {
+            text-decoration: underline;
+        }
+        a:visited {
+            color: #6A1B9A; /* 已访问链接颜色 */
+        }
+        a:hover {
+            text-decoration: none;
+            background-color: #FFF8E1;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        a:active {
+            color: #FF5722; /* 点击时链接颜色 */
+        }
+
+        /* 1. 后代选择器：div内表格中的链接样式 */
+        div table a {
+            color: #0D47A1;
+            font-style: italic;
+        }
+
+        /* 表格基础样式（优化可读性，不违反作业规则） */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #503A23;
+            padding: 10px;
+            text-align: center;
+            background-color: #FFF8E1;
+        }
+        th {
+            background-color: #FFCC80;
+            font-weight: bold;
+        }
+
+        /* 底部公告区样式 */
+        .notice {
+            background-color: #FFF8E1;
+            padding: 15px;
+            margin-top: 20px;
+            border: 1px dashed #503A23;
+        }
+    </style>
+</head>
+<body>
+    <!-- 调用.page样式，包裹所有内容 -->
+    <div class="page">
+        <!-- ① 顶部标题区 -->
+        <div>
+            <h1>晨光阅读会 · Morning Reading Club 招新</h1>
+        </div>
+
+        <!-- ② 活动介绍区 -->
+        <div>
+            <h2 id="intro">关于晨光阅读会</h2>
+            <p>晨光阅读会成立于2023年，是一个以“拥抱清晨、共享书香”为理念的兴趣社团。我们相信，清晨的静谧时光是与文字对话的最佳时刻——当第一缕阳光透过窗棂洒在书页上，当城市还未被喧嚣填满，每一段文字都能更清晰地走进心里。在这里，我们不追求阅读速度，只专注于文字带来的思考与共鸣，无论是经典文学、散文随笔，还是实用干货，都能找到同频的伙伴。</p>
+            <p>每周一至周五的早晨6:30-7:30，我们会在学校图书馆三楼靠窗区域集合，每人携带一本近期阅读的书籍，先进行30分钟的沉浸式阅读，随后用20分钟分享感悟，最后10分钟交流下周阅读计划。即使是忙碌的学业季，清晨的阅读时光也能为我们充能，让一整天都保持清晰的思路与积极的心态。</p>
+            <!-- 重要提示：p#intro -->
+            <p id="intro">重要提示：本次招新仅面向大一、大二学生，报名后需参与一次体验活动（12月10日清晨6:30图书馆集合），确认契合社团氛围后即可正式加入，无强制打卡要求，鼓励自主享受阅读。</p>
+        </div>
+
+        <!-- ③ 活动报名信息表格区 -->
+        <div>
+            <h3>已报名成员参考（含核心成员）</h3>
+            <table>
+                <tr>
+                    <th>姓名</th>
+                    <th>年级专业</th>
+                    <th>常读书籍类型</th>
+                    <th>联系方式（仅社团管理可见）</th>
+                </tr>
+                <tr>
+                    <td>林晓晨</td>
+                    <td>23级汉语言文学</td>
+                    <td>现当代散文、诗歌</td>
+                    <td><a href="javascript:;">点击查看（需验证权限）</a></td>
+                </tr>
+                <tr>
+                    <td>Emma Watson（英文名）</td>
+                    <td>23级英语专业</td>
+                    <td>英文原版小说、跨文化研究</td>
+                    <td><a href="javascript:;">点击查看（需验证权限）</a></td>
+                </tr>
+                <tr>
+                    <td>张明宇</td>
+                    <td>22级历史学</td>
+                    <td>历史传记、社科类书籍</td>
+                    <td><a href="javascript:;">点击查看（需验证权限）</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- ④ 页面链接区 -->
+        <div>
+            <h3>相关链接</h3>
+            <div>
+                <p>查看往期活动照片：<a href="https://hongchenwusdnu.github.io/bookstore/job4.html" class="red" target="_blank">晨光阅读会往期活动纪实</a></p>
+                <p>在线咨询活动详情：<a href="job3.html" class="blue" target="_blank">晨光阅读会招新咨询（跳转至job3.html）</a></p>
+            </div>
+        </div>
+
+        <!-- ⑤ 底部公告区 -->
+        <div class="notice">
+            <h3>招新公告</h3>
+            <p>1. 报名截止时间：2024年12月8日晚24:00，逾期不再接受新报名；<br>
+            2. 报名方式：填写<a href="javascript:;">在线报名表</a>（需用校园网登录），或携带学生证到社团招新摊位（12月5日-7日大学生活动中心门口）现场报名；<br>
+            3. 体验活动须知：需自备一本喜欢的书籍，建议穿舒适保暖的衣物（清晨图书馆温度较低），无需携带其他物品，社团会提供热水与简易早餐（面包、鸡蛋）。</p>
+            <p>4. 社团福利：正式成员可免费借阅社团藏书（约500册，含文学、社科、工具类），每月参与一次“阅读之星”评选，获胜者可获得新书奖励；<br>
+            5. 疑问解答：如有任何问题，可添加社团QQ群（群号：123456789），群内会实时回复咨询，也可在工作日下午4:00-6:00到大学生活动中心302室找社团负责人沟通。</p>
+            <p>期待在清晨的阳光里，与热爱阅读的你相遇，一起在文字中探索世界，在交流中收获成长！</p>
+        </div>
+    </div>
+</body>
+</html>
